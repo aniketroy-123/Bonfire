@@ -61,8 +61,35 @@ body #dark:checked ~ * * {
   height: 100vh;
   width: 100%;
   background-image: url("../images/png/BackgroundLightGradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .active-body .main-section {
   background-image: url("../images/png/BackgroundDarkGradient copy.png");
+}
+/* ROADMAP-CSS */
+.cricle-img {
+  border-radius: 50%;
+}
+
+.roadmap-line-img {
+  left: 15.4%;
+  top: 5%;
+  z-index: -1;
+}
+
+.line-img {
+  width: 12px;
+  height: 582px;
+  background: linear-gradient(
+    to top,
+    rgb(107, 231, 237) 94.1771%,
+    rgb(227, 50, 239) 96.1771%,
+    rgb(227, 50, 239) 100%
+  );
+}
+
+.h-500 {
+  height: 500px;
 }
