@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: nudista;
-  src: url("../font/Nudista\ Bold/!important");
+  src: url("../font/Nudista\ Bold/!important") !important;
 }
 .font-nudista {
   font-family: nudista !important ;
@@ -171,7 +171,9 @@ html {
 .skin {
   background-color: var(--skin);
 }
-
+.color-blue {
+  color: var(--blue);
+}
 .opacity_07 {
   opacity: 0.7;
 }
@@ -858,6 +860,47 @@ body #dark:checked ~ * * {
   max-width: 711px;
 }
 /* UTILITES-ENDS */
+
+/* TEAM-CSS */
+.team {
+  margin-top: -118px;
+  height: 651px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/png/TheTeamLtBG.png");
+}
+.team-image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../images/png/teamfirst.png");
+}
+.team-image-second {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../images/png/Gradient\ BPY.png");
+}
+.team-image-third {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../images/png/Light\ Pink.png");
+}
+.team-image-forth {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../images/png/Cloudly\ sky.png");
+}
+
+/* TEAM-CSS-ENDS */
+
+/* FAQ-CSS */
+.faq {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../images/png/faqbg.png");
+}
+/* FAQ-CSS-ENDS */
 /* ROADMAP-CSS */
 .cricle-img {
   border-radius: 50%;
@@ -882,4 +925,23 @@ body #dark:checked ~ * * {
 
 .h-500 {
   height: 500px;
+}
+@media (max-width: 1399px) {
+  .team-first-image {
+    width: 31% !important;
+  }
+}
+@media (max-width: 1199px) {
+  .team {
+    margin-top: -183px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/png/TheTeamLtBG.png);
+  }
+}
+@media (max-width: 575px) {
+  .team {
+    margin-top: -109px;
+  }
 }
