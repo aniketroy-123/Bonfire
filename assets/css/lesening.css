@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    color: var(--text-color);
+    list-style: none;
+    text-decoration: none !important;
+}
+
+h1 {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--purple);
+}
+
+img {
+    cursor: pointer;
+}
+
+:root {
+    /* COLORS  */
+    --app-bg: #fdfdfd;
+    --text-color: #2c2c2c;
+    --purple: #36377C;
+    --white: #FFFFFF;
+    --bg-green: #CFF7A3;
+
+    /* FONT SIZES  */
+    --font-sm: 18px;
+    --font-md: 26px;
+    --font-lg: 30px;
+    --font-xl: 71px;
+
+    /* FONT-WEIGHTS  */
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+@media (max-width:1100.98px) {
+    :root {
+        --font-sm: 16px;
+        --font-md: 20px;
+        --font-lg: 24px;
+        --font-xl: 60px;
+    }
+}
+
+@media (max-width:991.98px) {
+    :root {
+        --font-md: 18px;
+        --font-lg: 20px;
+        --font-xl: 48px;
+    }
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --font-md: 16px;
+        --font-lg: 18px;
+        --font-xl: 32px;
+    }
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --font-md: 12px;
+        --font-lg: 16px;
+        --font-xl: 24px;
+    }
+}
+
+.font-sm {
+    font-size: var(--font-sm);
+}
+
+.font-md {
+    font-size: var(--font-md);
+}
+
+.font-lg {
+    font-size: var(--font-lg);
+}
+
+.font-xl {
+    font-size: var(--font-xl);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.white {
+    color: var(--white);
+}
+
+.bg-green {
+    background-color: var(--bg-green);
+}
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+
+
+.footer {
+    background-image: url(../images/png/Union\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer ul li a img,
+.footer ul li a {
+    transition: all 0.3s ease-in-out;
+}
+
+.footer ul li a img:hover {
+    transform: scale(1.3);
+}
+
+.footer a:hover {
+    color: var(--purple);
+}
+
+@media (max-width:767.98px) {
+    h1 {
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .logo {
+        max-width: 200px;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    h1 {
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1919.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body #dark:checked~*,
+body #dark:checked~* * {
+    /* Dark Mode Style Variables */
+    --app-bg: #424242;
+    --text-color: #e0e0e0;
+    --mode-label-bg: #eeeeee;
+    --mode-label-after-bg: #383838;
+    --mode-label-after-left: 32px;
+    --ops-color: #b45627;
+}
+
+#mode-label {
+    position: relative;
+    border-radius: 20px;
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: var(--mode-label-bg, #363636);
+}
+
+#mode-label::after {
+    content: "";
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    left: var(--mode-label-after-left, 2px);
+    background-color: var(--mode-label-after-bg, #e9e9e9);
+    top: 2px;
+    transition: all 0.3s;
+    position: absolute;
+}
+
+.app {
+    height: auto !important;
+    min-height: 100%;
+    padding: 50px;
+    transition: all 1s;
+    background-color: var(--app-bg);
+}
+
+/* .main-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/png/BackgroundLightGradient.png");
+} */
+
+.active-body .main-section {
+    background-image: url("../images/png/BackgroundDarkGradient copy.png");
+}
