@@ -2,6 +2,13 @@
   font-family: jakob;
   src: url("../Jakob/jakob.bold.ttf");
 }
+@font-face {
+  font-family: nudista;
+  src: url("../font/Nudista\ Bold/!important");
+}
+.font-nudista {
+  font-family: nudista !important ;
+}
 body,
 html {
   overflow-x: hidden;
@@ -840,6 +847,17 @@ body #dark:checked ~ * * {
   -webkit-text-stroke: 2px var(--blue);
 }
 /* BONFIRE-CSS-ENDS */
+
+/* UTILITES-CSS */
+.utilites {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/png/utilites-bg.png");
+}
+.mw-w-711 {
+  max-width: 711px;
+}
+/* UTILITES-ENDS */
 /* ROADMAP-CSS */
 .cricle-img {
   border-radius: 50%;
