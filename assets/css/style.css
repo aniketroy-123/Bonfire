@@ -75,11 +75,24 @@ html {
     --fs-xsm: 16px;
     --fs-sm: 18px;
     --fs-md: 18px;
-    --fs-xmd: 28px;
+    --fs-xmd: 23px;
     --fs-lg: 30px;
     --fs-xlg: 32px;
     --fs-xl: 48px;
     --fs-xxl: 54px;
+    --fs-xxxl: 110px;
+  }
+}
+@media (max-width: 375.98px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 18px;
+    --fs-xmd: 23px;
+    --fs-lg: 30px;
+    --fs-xlg: 32px;
+    --fs-xl: 48px;
+    --fs-xxl: 39px;
     --fs-xxxl: 110px;
   }
 }
@@ -154,6 +167,25 @@ html {
 
 .opacity_07 {
   opacity: 0.7;
+}
+/* COMMON-CLASS */
+.heading {
+  color: var(--white);
+  font-size: var(--fs-xxxl);
+}
+.md-heading {
+  color: var(--white);
+  font-size: var(--fs-xxl);
+}
+.para {
+  color: var(--blue);
+  font-size: var(--fs-xmd);
+}
+.xsmall-heading {
+  font-size: var(--fs-xlg);
+}
+.small-heading {
+  font-size: var(--fs-xl);
 }
 /* =====================================NAVBAR-CSS======================== */
 .connect-btn {
@@ -796,6 +828,18 @@ body #dark:checked ~ * * {
 .active-body .main-section {
   background: rgba(51, 162, 164, 1);
 }
+/* BONFIRE-CSS */
+.bonfire {
+  background-image: url("../images/png/bonfirebg.png");
+  background-size: cover;
+  background-position: top center;
+  /* min-height: 100vh; */
+}
+.text-border {
+  text-shadow: 0px 5px var(--blue);
+  -webkit-text-stroke: 2px var(--blue);
+}
+/* BONFIRE-CSS-ENDS */
 /* ROADMAP-CSS */
 .cricle-img {
   border-radius: 50%;
