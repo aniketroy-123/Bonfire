@@ -7,7 +7,7 @@ function roadMapLineScroll() {
     .getBoundingClientRect().y;
 
   if (roadmapElementSelector <= 0) {
-    const percent = (Math.abs(roadmapElementSelector) * 100) / 900;
+    const percent = (Math.abs(roadmapElementSelector) * 50) / 100;
 
     if (102 - percent < 0) {
       once = true;

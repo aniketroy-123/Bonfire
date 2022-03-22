@@ -1,19 +1,156 @@
-:root {
-  --app-bg: #fdfdfd;
-  --text-color: #2c2c2c;
+@font-face {
+  font-family: jakob;
+  src: url("../Jakob/jakob.bold.ttf");
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto";
-  color: var(--text-color);
-}
-
-html,
 body {
-  height: 100%;
+  font-family: jakob;
+}
+:root {
+  --fs-xsm: 16px;
+  --fs-sm: 18px;
+  --fs-md: 25px;
+  --fs-xmd: 28px;
+  --fs-lg: 30px;
+  --fs-xlg: 32px;
+  --fs-xl: 48px;
+  --fs-xxl: 54px;
+  --fs-xxxl: 110px;
+  /* color */
+  --white: #ffffff;
+  --light-green: #92d131;
+  --green: #97cc3c;
+  --dark-green: #72a24f;
+  --dark-gray: #aedb5c;
+  --blue: rgba(54, 55, 124, 1);
+  --light-blue: #e2fff1;
+  --skin: #eaf5c8;
+}
+
+@media (max-width: 1199.98px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 25px;
+    --fs-xmd: 28px;
+    --fs-lg: 30px;
+    --fs-xlg: 32px;
+    --fs-xl: 48px;
+    --fs-xxl: 54px;
+    --fs-xxxl: 110px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 25px;
+    --fs-xmd: 28px;
+    --fs-lg: 30px;
+    --fs-xlg: 32px;
+    --fs-xl: 48px;
+    --fs-xxl: 54px;
+    --fs-xxxl: 110px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 25px;
+    --fs-xmd: 28px;
+    --fs-lg: 30px;
+    --fs-xlg: 32px;
+    --fs-xl: 48px;
+    --fs-xxl: 54px;
+    --fs-xxxl: 110px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 25px;
+    --fs-xmd: 28px;
+    --fs-lg: 30px;
+    --fs-xlg: 32px;
+    --fs-xl: 48px;
+    --fs-xxl: 54px;
+    --fs-xxxl: 110px;
+  }
+}
+
+/*  font Weight */
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+/* font size */
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+.fs_md {
+  font-size: var(--fs-md);
+}
+.fs_xmd {
+  font-size: var(--fs-xmd);
+}
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+.fs_xlg {
+  font-size: var(--fs-xlg);
+}
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+.fs_xxl {
+  font-size: var(--fs-xxl);
+}
+.fs_xxxl {
+  font-size: var(--fs-xxxl);
+}
+/* COLOR-CALSES */
+.green {
+  color: var(--green);
+}
+.light-green {
+  color: var(--light-green);
+}
+.dark-green {
+  color: var(--dark-green);
+}
+.dark-gray {
+  color: var(--dark-gray);
+}
+.blue {
+  color: var(--blue);
+}
+.light-blue {
+  color: var(--light-blue);
+}
+.skin {
+  color: var(--skin);
+}
+.opacity_07 {
+  opacity: 0.7;
 }
 
 body #dark:checked ~ *,
@@ -60,13 +197,11 @@ body #dark:checked ~ * * {
 .main-section {
   height: 100vh;
   width: 100%;
-  background-image: url("../images/png/BackgroundLightGradient.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgba(174, 219, 92, 1);
 }
 
 .active-body .main-section {
-  background-image: url("../images/png/BackgroundDarkGradient copy.png");
+  background: rgba(51, 162, 164, 1);
 }
 /* ROADMAP-CSS */
 .cricle-img {
