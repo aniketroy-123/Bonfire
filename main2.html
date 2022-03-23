@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="./assets/css/main2.css">
 
     <title>Bonfire</title>
@@ -20,7 +21,7 @@
 
 <body>
     <!-- Navbar Section -->
-    <section class="hero-bg">
+    <section class="hero-bg hero-active-bg">
         <section class="color_brwon_bg pt-4">
             <!-------------- NAVBAR AND HERO SECTION STARTS --------------------->
             <main class="main-top-section dragon_bg_img position-relative z-index-10">
@@ -28,7 +29,7 @@
                 <section class="shadow-white w-100 navabar-fixed">
                     <nav class="navbar-wrapper d-flex bg-nav py-2 py-lg-2">
                         <div id="overlay">
-                            <div class="container navbar-container">
+                            <div class="container navbar-container ">
                                 <div class="row">
                                     <div class="col-12">
                                         <div
@@ -152,7 +153,7 @@
                                 </div>
                             </div>
                             <a class="connect-btn rounded-pill text-decoration-none" href=""><button
-                                    class="text-white rounded-pill border-0 fs_md px-4 px-sm-5 py-3">Connect</button></a>
+                                    class="text-white rounded-pill border-0 fs_md px-4 px-sm-4 py-2 py-md-2 py-lg-3">Connect</button></a>
                         </div>
                     </nav>
                 </section>
@@ -187,9 +188,12 @@
                     </div>
 
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <img class="w-100" src="./assets/images/png/heropng.png" alt="">
+                <div class="row justify-content-center mt-23">
+                    <div class="col-10 col-sm-8 col-md-6 position-relative">
+                        <div class="position-absolute sun-image">
+                            <img class="w-100" src="./assets/images/png/Sun.png" alt="Sun">
+                        </div>
+                        <img class="w-100 position-relative" src="./assets/images/png/heropng.png" alt="">
                     </div>
                 </div>
 
@@ -220,7 +224,138 @@
     </section>
 
     <!-- Bonfire-End -->
+    <!-- Road map section  -->
+    <section class="position-relative roadmap">
+        <div class="roadmap-bg-img d-none d-lg-block w-100">
+            <img class="w-100" src="./assets/images/png/roadmap-bg-img.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                        <div class="position-absolute timeline_div"></div>
+                        <li class="img-roadmap-1">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-1.png" alt="">
+                            </div>
+                        </li>
+                        <!-- Item 1 -->
+                        <li class="pt-0">
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
 
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-1">
+                                        <img src="./assets/images/png/roadmap-img-1.png" alt="">
+                                    </div>
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="img-roadmap-2">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-2.png" alt="">
+                            </div>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-2">
+                                        <img src="./assets/images/png/roadmap-img-2.png" alt="">
+                                    </div>
+
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="img-roadmap-3">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-3.png" alt="">
+                            </div>
+                        </li>
+                        <!-- Item 1 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-3">
+                                        <img src="./assets/images/png/roadmap-img-3.png" alt="">
+                                    </div>
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="img-roadmap-4">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-4.png" alt="">
+                            </div>
+                        </li>
+
+
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-4">
+                                        <img src="./assets/images/png/roadmap-img-4.png" alt="">
+                                    </div>
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Utilites-Start -->
     <section class="utilites py-sm-5 position-relative">
         <div class="container py-5">
@@ -429,8 +564,8 @@
 
 
 
-    <!-- <div class="container-fluid">
-      
+    <div class="container-fluid">
+
         <div class="app dark">
             <label for="dark" id="mode-label"></label>
             <h2>Dark Mode Without Javascript</h2>
@@ -439,10 +574,13 @@
         </div>
     </div>
     <div class="main-section">
-        <input type="checkbox" id="dark" onchange="handleDarkMode()" />
+        <div onclick="handleDarkMode()" id="dark">
+            <img class="dark-img" src="./assets/images/png/dark-img.png" alt="">
+            <img class="light-img" src="./assets/images/png/light-img.png" alt="">
 
+        </div>
         <h1>This is title</h1>
-    </div> -->
+    </div>
 
     <a href="#header" id="scroll" style="display: none"><span></span></a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -464,7 +602,31 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js">
+
+    </script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+    <script>
+        let timeline = document.querySelector('.timeline_div');
+        console.log(timeline)
+        ScrollTrigger.create({
+            trigger: ".timeline",
+            animation: gsap.fromTo(timeline, {
+                height: "0%"
+            }, {
+                height: "76%"
+            }),
+
+            start: "top center",
+            end: "bottom center",
+            scrub: 1, // I like the 1 sec delay, set to true for exact anime on scroll
+        });
+    </script>
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -493,6 +655,17 @@
             html.classList.add('no-scroll-x');
 
         }, 3000)
+    </script>
+    <script>
+        function handleDarkMode() {
+            console.log("run");
+            if ($("body").hasClass("active-body")) {
+                $("body").removeClass("active-body");
+            } else {
+                $("body").removeClass("active-body");
+                $("body").addClass("active-body");
+            }
+        }
     </script>
 
     <script src="./assets/js/main.js"></script>
