@@ -920,7 +920,7 @@ body #dark:checked ~ * * {
     pointer-events: none;
 }
 
-.direction-r .flag:after {
+/* .direction-r .flag:after {
     content: "";
     position: absolute;
     right: 100%;
@@ -932,7 +932,7 @@ body #dark:checked ~ * * {
     border-right-color: rgb(248, 248, 248);
     border-width: 8px;
     pointer-events: none;
-}
+} */
 
 .time-wrapper {
     display: inline;
@@ -1111,4 +1111,8 @@ body #dark:checked ~ * * {
 .flag.active::before {
     background: var(--blue);
     border: 2px solid var(--white);
+}
+.roadmap-bg-img {
+    position: absolute;
+    z-index: -1;
 }
