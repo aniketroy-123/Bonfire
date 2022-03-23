@@ -251,6 +251,7 @@
             <div class="row">
                 <div class="col">
                     <ul class="timeline">
+                        <div class="position-absolute timeline_div"></div>
                         <li class="img-roadmap-1">
                             <div class="direction-l">
                                 <img src="./assets/images/png/roadmap-1.png" alt="">
@@ -438,17 +439,19 @@
         gsap.registerPlugin(ScrollTrigger);
     </script>
     <script>
-        let flag = document.querySelectorAll('.flag');
-        console.log(flag)
+        let timeline = document.querySelector('.timeline_div');
+        console.log(timeline)
+        ScrollTrigger.create({
+            trigger: ".timeline",
+            animation: gsap.fromTo(timeline, {
+                height: "0%"
+            }, {
+                height: "76%"
+            }),
 
-        flag.forEach(element => {
-            ScrollTrigger.create({
-                trigger: element,
-                toggleClass: 'active',
-                start: "top center",
-                end: "+=1500 bottom",
-                scrub: 1, // I like the 1 sec delay, set to true for exact anime on scroll
-            });
+            start: "top center",
+            end: "bottom center",
+            scrub: 1, // I like the 1 sec delay, set to true for exact anime on scroll
         });
     </script>
 
