@@ -84,8 +84,8 @@ html {
     --fs-md: 18px;
     --fs-xmd: 23px;
     --fs-lg: 30px;
-    --fs-xlg: 32px;
-    --fs-xl: 48px;
+    --fs-xlg: 23px;
+    --fs-xl: 33px;
     --fs-xxl: 54px;
     --fs-xxxl: 110px;
   }
@@ -97,8 +97,8 @@ html {
     --fs-md: 18px;
     --fs-xmd: 23px;
     --fs-lg: 30px;
-    --fs-xlg: 32px;
-    --fs-xl: 48px;
+    --fs-xlg: 18px;
+    --fs-xl: 28px;
     --fs-xxl: 39px;
     --fs-xxxl: 110px;
   }
@@ -839,9 +839,11 @@ body #dark:checked ~ * * {
 }
 /* BONFIRE-CSS */
 .bonfire {
+  margin-top: -203px;
   background-image: url("../images/png/bonfirebg.png");
   background-size: cover;
   background-position: top center;
+  position: relative;
   /* min-height: 100vh; */
 }
 .text-border {
@@ -894,11 +896,76 @@ body #dark:checked ~ * * {
 
 /* TEAM-CSS-ENDS */
 
+/* HERO-CSS */
+.layer {
+  top: 662px !important;
+  left: 290px !important;
+}
+.layer-second {
+  top: 687px !important;
+  left: 848px !important;
+}
+.layer-third {
+  width: 12%;
+  top: 637px !important;
+  left: 92% !important;
+}
+.layer-forth {
+  top: 624px !important;
+  left: 2% !important;
+}
+.hero-bg {
+  min-height: 1200px;
+  background-size: cover;
+  /* background-position: center; */
+  background-image: url("../images/png/herobg.png");
+}
+.header-container {
+  margin-top: -21px;
+}
+/* HERO-CSS-ENDS */
 /* FAQ-CSS */
 .faq {
+  position: relative;
+  z-index: -1;
+  height: 2040px;
+  margin-top: -56px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("../images/png/faqbg.png");
+}
+.faq-content {
+  border-radius: 20px;
+  border: 5.1px solid rgba(54, 55, 124, 1);
+}
+.faq-list::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--blue);
+  top: 67px;
+  left: 0;
+}
+.faq-para {
+  max-width: 619px;
+}
+.faqside {
+  right: 27px;
+  top: 49px;
+}
+.faqsecond {
+  left: 0;
+  top: 42%;
+}
+.faqthird {
+  right: 281px;
+  top: 65%;
+}
+.faqfifth {
+  right: 29%;
+  bottom: -288px;
 }
 /* FAQ-CSS-ENDS */
 /* ROADMAP-CSS */
@@ -930,7 +997,11 @@ body #dark:checked ~ * * {
   .team-first-image {
     width: 31% !important;
   }
+  .faqfifth {
+    bottom: -198px;
+  }
 }
+
 @media (max-width: 1199px) {
   .team {
     margin-top: -183px;
@@ -939,9 +1010,60 @@ body #dark:checked ~ * * {
     background-size: cover;
     background-image: url(../images/png/TheTeamLtBG.png);
   }
+  .faqsecond {
+    left: -76px;
+  }
+  .faqfifth {
+    max-width: 371px;
+    right: 29%;
+    bottom: -196px;
+  }
+}
+@media (max-width: 992.98px) {
+  .faqsecond {
+    left: -106px;
+  }
+  .faqfifth {
+    right: 21%;
+    bottom: -228px;
+    max-width: 366px;
+  }
+  .faqside {
+    right: -87px;
+    top: 49px;
+  }
+}
+@media (max-width: 768.98px) {
+  .faq {
+    padding-bottom: 13rem;
+    height: 100%;
+  }
+  .faqsecond {
+    left: -70px;
+  }
+  .faqside {
+    right: -64px;
+  }
 }
 @media (max-width: 575px) {
   .team {
     margin-top: -109px;
   }
+  .faq-list::after {
+    width: 15px;
+    height: 15px;
+    top: 13px;
+    left: 15px;
+  }
 }
+/* @media (max-width: 575px) {
+  .team {
+    margin-top: -109px;
+  }
+  .faq-list::after {
+    width: 15px;
+    height: 15px;
+    top: 62px;
+    left: 15px;
+  }
+} */
