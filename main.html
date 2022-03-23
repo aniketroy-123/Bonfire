@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Bonfire</title>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <section class="color_brwon_bg pt-4">
+        <!-------------- NAVBAR AND HERO SECTION STARTS --------------------->
+        <main class="main-top-section dragon_bg_img position-relative z-index-10">
+            <!-- NAVBAR START ----------->
+            <section class="shadow-white w-100 navabar-fixed">
+                <nav class="navbar-wrapper d-flex bg-nav py-2 py-lg-2">
+                    <div id="overlay">
+                        <div class="container navbar-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div
+                                        class="left d-flex justify-content-center text-center flex-column align-items-center">
+                                        <ul class="list-unstyled pt-5 mt-5 overlay-links">
+                                            <li class="py-lg-3 py-2 overflow-hidden">
+                                                <span class="d-inline-block section-1">
+                                                    <a href="#About" class="overlay-links ">About</a>
+                                                </span>
+                                            </li>
+                                            <li class="py-lg-3 py-2 overflow-hidden">
+                                                <span class="d-inline-block section-2">
+                                                    <a href="#Roadmap" class="overlay-links  ">Roadmap</a>
+                                                </span>
+                                            </li>
+                                            <li class="py-lg-3 py-2 overflow-hidden">
+                                                <span class="d-inline-block section-3">
+                                                    <a href="#Team" class="overlay-links ">Team</a>
+                                                </span>
+                                            </li>
+                                            <li class="py-lg-3 py-2 overflow-hidden">
+                                                <span class="d-inline-block section-4">
+                                                    <a href="#FAQ" class="overlay-links ">FAQ</a>
+                                                </span>
+                                            </li>
+                                            <li class="py-lg-3 py-2 overflow-hidden">
+                                                <span class="d-inline-block section-4">
+                                                    <a href="#Utilities " class="overlay-links ">Utilities </a>
+                                                </span>
+                                            </li>
+
+
+
+                                            <!-- <li class="py-lg-3 pt-4 overflow-hidden d-md-none ">
+                                                <span class="d-inline-block section-7">
+                                                    <a href="#faq" class="overlay-links text-white   ">
+                                                        <ul class="list-unstyled d-flex">
+
+                                                            <li class=""> <a class="header-icons"
+                                                                    href="https://www.twitter.com" target="_blank"><img
+                                                                        src="./assets/img/svg/twiiter.svg"
+                                                                        alt="image"></a>
+                                                            </li>
+                                                            <li class="mx-3">
+                                                                <a class="header-icons" href="http://www.discord.com/"
+                                                                    target="_blank"><img
+                                                                        src="./assets/img/svg/discord.svg"
+                                                                        alt="image"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="header-icons" href="https://www.opensea.com/"
+                                                                    target="_blank"><img
+                                                                        src="./assets/img/svg/opensea.svg"
+                                                                        alt="image"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </a>
+                                                </span>
+                                            </li> -->
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="container container-lg-fluid navbar-container d-flex justify-content-between align-items-center">
+                        <div class="navbar-bg rounded-pill pt-1 pb-2 px-1 w-100 me-1">
+                            <div
+                                class="d-flex justify-content-between align-items-center text-nowrap bg-white rounded-pill pe-3 pe-lg-0">
+                                <a href="#">
+                                    <img class="nav-logo" src="./assets/images/svg/logo-bon.svg" alt="logo" />
+                                </a>
+                                <div class="nav-items-wrap d-none d-lg-block d-flex">
+                                    <ul class="nav-items-list list-unstyled align-items-center d-flex m-auto">
+                                        <li class="n-item pe-3 nav-links-active">
+                                            <a href="#About" class="nav-links fs_sm">About</a>
+                                        </li>
+                                        <li class="n-item ps-4 ps-xl-4 ms-xl-2">
+                                            <a class="nav-links fs_sm" href="#Roadmap">Roadmap</a>
+                                        </li>
+                                        <li class="n-item px-4 px-xl-4 mx-xl-2">
+                                            <a href="#Team" class="nav-links fs_sm">Team</a>
+                                        </li>
+                                        <li class="n-item me-lg-4 pe-lg-2">
+                                            <a href="#FAQ" class="nav-links fs_sm">FAQ</a>
+                                        </li>
+                                        <li class="n-item">
+                                            <a href="#Utilities " class="nav-links fs_sm">Utilities </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-quantum d-flex justify-content-between align-items-center">
+
+                                    <div class="n-item  pe-2 d-flex align-items-center">
+                                        <ul class="list-unstyled d-flex mb-0 me-5 pe-2">
+
+                                            <li class="d-none d-md-block"> <a class="header-icons" target="_blank"
+                                                    href="http://www.discord.com/"><img
+                                                        src="./assets/images/png/Discord.png" alt="image"></a></li>
+                                            <li class="d-none d-md-block px-3 px-xl-4 mx-1"> <a class="header-icons"
+                                                    target="_blank" href="http://www.discord.com/"><img
+                                                        src="./assets/images/png/insta.png" alt="image"></a></li>
+                                            <li class="d-none d-md-block"> <a class="header-icons" target="_blank"
+                                                    href="https://www.twitter.com"><img
+                                                        src="./assets/images/png/twitter.png" alt="image"></a></li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <!-- Toggle Button nav -->
+                                    <div id="main-menu" class="hamburger-menu d-inline-block d-lg-none">
+                                        <span class="first"></span>
+                                        <span class="sec"></span>
+                                        <span class="third"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="connect-btn rounded-pill text-decoration-none" href=""><button
+                                class="text-white rounded-pill border-0 fs_md px-4 px-sm-5 py-3">Connect</button></a>
+                    </div>
+                </nav>
+            </section>
+            <!-- NAVBAR END ------------->
+        </main>
+        <!-------------- NAVBAR AND HERO SECTION ENDS ----------------------->
+
+
+    </section>
+    <!-- =============================================== ROADMAP   START =============================================== -->
+    <section class="position-relative d-mob-none" id="roadmap">
+        <!-- <div class="spring"> <img src="./assets/img/png/spring.png" alt=""></div> -->
+        <div class="container my-5 pt-5">
+            <h1 class="my-5 sub-heading text-center  py-5"> ROADMAP</h1>
+            <!-- 1st -->
+            <div class="row justify-content-center  mb-5 pb-3 pb-md-5 position-relative">
+                <div class="col-auto">
+                    <div><img class="cricle-img" src="./assets/images/png/roadmap.png" alt=""></div>
+
+                </div>
+                <div class="col-9 col-lg-8">
+                    <div class="ps-3 ps-sm-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                        <h1 class="heading mb-3 pb-lg-4">Launch Limited Pre-Sale of 444 Metabeings</h1>
+                        <p class="para opacity-08">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                            has roots
+                            in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                            a
+                            Latin
+                            professor at Hampden-Sydney College.</p>
+                    </div>
+                </div>
+                <div class="position-absolute roadmap-line-img">
+                    <div class="line-img"></div>
+                </div>
+            </div>
+            <!-- 2nd -->
+            <div class="row justify-content-center  mb-5 pb-3 pb-md-5 ">
+                <div class="col-auto">
+                    <div><img class="cricle-img" src="./assets/images/png/roadmap.png" alt=""></div>
+                </div>
+                <div class="col-9 col-lg-8">
+                    <div class="ps-3 ps-sm-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                        <h1 class="heading mb-3 pb-lg-4">Release Minting to the public</h1>
+                        <p class="para opacity-08">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                            has roots
+                            in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                            a
+                            Latin
+                            professor at Hampden-Sydney College.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd -->
+            <div class="row justify-content-center  mb-5 pb-3 pb-md-5 ">
+                <div class="col-auto">
+                    <div><img class="cricle-img" src="./assets/images/png/roadmap.png" alt=""></div>
+                </div>
+                <div class="col-9 col-lg-8">
+                    <div class="ps-3 ps-sm-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                        <h1 class="heading mb-3 pb-lg-4">Reward Users Weekly for the next 2 years</h1>
+                        <p class="para opacity-08">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                            has roots
+                            in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                            a
+                            Latin
+                            professor at Hampden-Sydney College.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tsParticles container -->
+    <!-- <div id="tsparticles"></div> -->
+    <!-- =============================================== ROADMAP   ENDS =============================================== -->
+    <div class="container-fluid">
+        <!-- must be first element -->
+
+        <!-- content -->
+        <div class="app dark">
+            <label for="dark" id="mode-label"></label>
+            <h2>Dark Mode Without Javascript</h2>
+            <p>XOREN | Let's Learn Together</p>
+            <strong>Instagram: @xoren.ir</strong>
+        </div>
+    </div>
+
+    <!-- Road map section  -->
+    <section class="position-relative">
+        <div class="roadmap-bg-img">
+            <img src="./assets/images/png/roadmap-bg-img.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                        <li class="img-roadmap-1">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-1.png" alt="">
+                            </div>
+                        </li>
+                        <!-- Item 1 -->
+                        <li class="pt-0">
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-1">
+                                        <img src="./assets/images/png/roadmap-img-1.png" alt="">
+                                    </div>
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="img-roadmap-2">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-2.png" alt="">
+                            </div>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-2">
+                                        <img src="./assets/images/png/roadmap-img-2.png" alt="">
+                                    </div>
+
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="img-roadmap-3">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-3.png" alt="">
+                            </div>
+                        </li>
+                        <!-- Item 1 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-3">
+                                        <img src="./assets/images/png/roadmap-img-3.png" alt="">
+                                    </div>
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="img-roadmap-4">
+                            <div class="direction-l">
+                                <img src="./assets/images/png/roadmap-4.png" alt="">
+                            </div>
+                        </li>
+
+
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag"></span>
+                                </div>
+                                <div class="border_card p-md-5  ms-md-5 position-relative">
+                                    <div class="roadmap-img-4">
+                                        <img src="./assets/images/png/roadmap-img-4.png" alt="">
+                                    </div>
+                                    <p class="mt-4 text-center fs_xlg  fw-700 text_blue">
+                                        Lorem ipsum
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="text-center para_width fs_xlg  fw-600 text_blue mx-1">
+                                            Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="main-section">
+        <input type="checkbox" id="dark" onchange="handleDarkMode()" />
+
+        <h1>This is title</h1>
+    </div>
+
+    <a href="#header" id="scroll" style="display: none"><span></span></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/  `ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+    <script>
+        var preloader = document.getElementById('loading')
+        var body = document.querySelector("body")
+        var html = document.querySelector("html")
+        setTimeout(function loader() {
+            preloader.style.display = 'none';
+            body.classList.remove('no-scroll-y');
+            body.classList.add('no-scroll-x');
+            html.classList.add('no-scroll-x');
+
+        }, 3000)
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js">
+
+    </script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+    <script>
+        let flag = document.querySelectorAll('.flag');
+        console.log(flag)
+
+        flag.forEach(element => {
+            ScrollTrigger.create({
+                trigger: element,
+                toggleClass: 'active',
+                start: "top center",
+                end: "+=1500 bottom",
+                scrub: 1, // I like the 1 sec delay, set to true for exact anime on scroll
+            });
+        });
+    </script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
