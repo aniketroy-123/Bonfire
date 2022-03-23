@@ -390,12 +390,28 @@ a {
     background-color: transparent;
     color: #ffffff;
 }
-
+@media (max-width: 1199.98px) {
+    .timeline:before {
+        top: 200px !important;
+    }
+    .timeline .timeline_div {
+        top: 200px !important;
+    }
+}
 @media (max-width: 992px) {
     /* .nav-logo {
     width: 153px;
   } */
-
+    .timeline:before {
+        top: 240px !important;
+    }
+    .timeline .timeline_div {
+        top: 240px !important;
+    }
+    .roadmap {
+        background-color: var(--green);
+        padding: 52px 0px;
+    }
     .minting-card img {
         opacity: 0.2;
     }
@@ -728,6 +744,9 @@ a {
     .img-roadmap-4 {
         display: none;
     }
+    .border_card::after {
+        content: unset !important;
+    }
 }
 @media (max-width: 375.98px) {
     #overlay {
@@ -998,6 +1017,9 @@ body #dark:checked ~ * * {
     .timeline li {
         padding: 2em 0;
     }
+    .timeline .timeline_div {
+        left: 53% !important;
+    }
 
     .direction-l,
     .direction-r {
@@ -1023,17 +1045,7 @@ body #dark:checked ~ * * {
 
     .direction-l .flag:after,
     .direction-r .flag:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: -8px;
-        height: 0;
-        width: 0;
-        margin-left: -8px;
-        border: solid transparent;
-        border-bottom-color: rgb(255, 255, 255);
-        border-width: 8px;
-        pointer-events: none;
+        content: unset;
     }
 
     .time-wrapper {
