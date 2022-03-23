@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: nudista;
     color: var(--text-color);
     list-style: none;
     text-decoration: none !important;
@@ -51,7 +50,13 @@ img {
     --fw-700: 700;
 }
 
-@media (max-width:1100.98px) {
+@media(max-width:1399.98px) {
+    :root {
+        --font-lg: 26px;
+    }
+}
+
+@media (max-width:1199.98px) {
     :root {
         --font-sm: 16px;
         --font-md: 20px;
@@ -149,9 +154,6 @@ img {
 }
 
 @media (max-width:575.98px) {
-    .logo {
-        max-width: 200px;
-    }
 
     .copyright {
         display: none;
@@ -161,13 +163,6 @@ img {
         -webkit-text-stroke-width: 1px;
     }
 }
-
-@media (min-width:1200px) and (max-width:1919.98px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
 
 html,
 body {
